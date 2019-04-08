@@ -63,13 +63,14 @@ class _LoginPageState extends State<LoginPage> {
               children: <Widget>[
                 FlatButton(
                     onPressed: () {
-
+                      _usernameController.clear();
+                      _passwordController.clear();
                     },
                     child: Text('CANCEL')
                 ),
                 RaisedButton(
                     onPressed: () {
-
+                      Navigator.pop(context);
                     },
                   child: Text('NEXT'),
                 )
